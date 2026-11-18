@@ -1,8 +1,8 @@
 # CommunityHub
 
 ## Team
-- **Lead:** Your Full Name — [@Ndush-gif](https://github.com/Ndush-gif)
-- **Member:** Partner Name — [@PARTNER-USERNAME](https://github.com/PARTNER-USERNAME)
+- **Lead:** Catherine Nduku — [@Ndush-gif](https://github.com/Ndush-gif)
+- **Member:** Ann Catherine Waweru — [@anncathy-commits](https://github.com/anncathy-commits)
 - **Started:** November 2026 (Week 8), continuing to Week 12
 
 ## Project Description
