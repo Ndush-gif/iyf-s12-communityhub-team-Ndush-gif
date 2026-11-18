@@ -1,0 +1,94 @@
+:root {
+  --brand: #4f46e5;
+  --brand-dark: #3730a3;
+  --danger: #dc2626;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --bg: #f9fafb;
+  --surface: #fff;
+  --radius: 10px;
+
+  font: 16px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .75rem; }
+a { color: var(--brand); }
+
+/* ---------- Layout ---------- */
+.app { min-height: 100svh; display: flex; flex-direction: column; }
+
+.header {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  gap: 1rem; padding: 1rem 1.5rem; background: var(--brand); color: #fff;
+}
+.header .logo { color: #fff; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+.header nav a { color: #fff; text-decoration: none; margin-left: 1rem; padding-bottom: 2px; }
+.header nav a.active { border-bottom: 2px solid #fff; font-weight: 600; }
+.header a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+.page {
+  flex: 1; width: 100%; max-width: 1100px; margin: 0 auto; padding: 1.5rem;
+  display: grid; grid-template-columns: 1fr 280px; gap: 1.5rem; align-items: start;
+}
+@media (max-width: 800px) { .page { grid-template-columns: 1fr; } }
+
+.footer {
+  padding: 1.25rem; text-align: center; color: var(--muted);
+  border-top: 1px solid var(--line); background: var(--surface);
+}
+.footer nav { display: flex; justify-content: center; gap: 1rem; margin-bottom: .5rem; }
+.footer p { margin: 0; }
+
+/* ---------- Sidebar / Card ---------- */
+.sidebar { display: flex; flex-direction: column; gap: 1rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; }
+.card-title { font-size: 1rem; }
+.card p { margin: 0; }
+.popular-list { margin: 0; padding-left: 1.2rem; }
+.tag-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.tag { background: #eef2ff; color: var(--brand-dark); padding: .15rem .6rem; border-radius: 999px; font-size: .85rem; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block; border: 1px solid transparent; border-radius: 6px;
+  cursor: pointer; font: inherit; text-decoration: none;
+}
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.btn-small { padding: .25rem .65rem; font-size: .85rem; }
+.btn-medium { padding: .5rem 1rem; }
+.btn-large { padding: .75rem 1.4rem; font-size: 1.1rem; }
+.btn-primary { background: var(--brand); color: #fff; }
+.btn-primary:hover:not(:disabled) { background: var(--brand-dark); }
+.btn-secondary { background: var(--surface); color: var(--brand); border-color: var(--brand); }
+.btn-danger { background: var(--surface); color: var(--danger); border-color: var(--danger); }
+.btn-danger:hover { background: #fef2f2; }
+
+/* ---------- Posts ---------- */
+.post-list { display: flex; flex-direction: column; gap: 1rem; }
+.post-card, .post-detail, .create-post {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem;
+}
+.post-card h3 a { color: var(--text); text-decoration: none; }
+.post-card h3 a:hover { color: var(--brand); }
+.post-card p { margin: 0 0 .75rem; }
+.post-meta { display: flex; gap: 1rem; color: var(--muted); font-size: .9rem; }
+.post-actions { display: flex; gap: .5rem; margin-top: .75rem; }
+.byline { color: var(--muted); font-size: .9rem; }
+
+/* ---------- Forms ---------- */
+.create-post { margin-bottom: 1rem; }
+.field { display: flex; flex-direction: column; gap: .25rem; margin-bottom: .75rem; }
+.field label { font-weight: 600; font-size: .9rem; }
+.field input, .field textarea, .search {
+  font: inherit; padding: .55rem .75rem; border: 1px solid var(--line); border-radius: 6px; width: 100%;
+}
+.field input:focus, .field textarea:focus, .search:focus { outline: 2px solid var(--brand); border-color: transparent; }
+.form-error { color: var(--danger); margin: 0 0 .75rem; }
+.search { margin-bottom: 1rem; }
+.empty { color: var(--muted); }
