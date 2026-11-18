@@ -1,0 +1,32 @@
+/* Styles for the daily challenges only — prefixed dc- so they never clash with the app. */
+.dc-card { border-radius: 10px; padding: 1rem; margin-bottom: 1rem; text-align: left; }
+.dc-card-title { margin: 0 0 .5rem; font-size: 1.1rem; }
+.dc-card-primary { background: #4f46e5; color: #fff; }
+.dc-card-secondary { background: #f3f4f6; color: #1f2937; }
+.dc-card-outlined { background: transparent; border: 2px solid #4f46e5; }
+
+.dc-user-list { list-style: none; padding: 0; display: grid; gap: .5rem; }
+.dc-user-card { display: flex; justify-content: space-between; padding: .75rem 1rem;
+                border: 1px solid #e5e7eb; border-radius: 8px; }
+.dc-empty { color: #6b7280; }
+
+.dc-row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.dc-btn { display: inline-flex; align-items: center; gap: .4rem; border: 1px solid transparent;
+          border-radius: 6px; cursor: pointer; font: inherit; }
+.dc-btn:disabled { opacity: .55; cursor: not-allowed; }
+.dc-btn-small { padding: .25rem .6rem; font-size: .85rem; }
+.dc-btn-medium { padding: .5rem 1rem; }
+.dc-btn-large { padding: .75rem 1.4rem; font-size: 1.1rem; }
+.dc-btn-primary { background: #4f46e5; color: #fff; }
+.dc-btn-secondary { background: #fff; color: #4f46e5; border-color: #4f46e5; }
+.dc-btn-danger { background: #dc2626; color: #fff; }
+.dc-spinner { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent;
+              border-radius: 50%; animation: dc-spin .7s linear infinite; }
+@keyframes dc-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .dc-spinner { animation: none; } }
+
+.dc-layout { display: flex; flex-direction: column; min-height: 60vh; border: 1px solid #e5e7eb; }
+.dc-layout-header, .dc-layout-footer { padding: 1rem; background: #f3f4f6; }
+.dc-layout-body { flex: 1; display: grid; gap: 1rem; padding: 1rem; }
+.dc-layout-body.with-sidebar { grid-template-columns: 1fr 240px; }
+@media (max-width: 700px) { .dc-layout-body.with-sidebar { grid-template-columns: 1fr; } }
