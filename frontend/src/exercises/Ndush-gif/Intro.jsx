@@ -18,6 +18,7 @@ function Intro() {
       <p>{greeting}! Thanks for stopping by.</p>
       <p>I'm a Season 12 student at the IYF Weekend Academy, learning full-stack web development.</p>
       <p>Before React I worked through HTML, CSS and JavaScript, and I enjoy building things people can use.</p>
+      <p>Right now I'm leading my team on CommunityHub. Every project teaches me something new, and I'm excited to keep growing as a developer.</p>
       <p>Today is {now.toDateString()}.</p>
     </section>
   );
