@@ -1,4 +1,4 @@
-// Task 16.1 — useState: counter and toggle.
+// Task 16.1  useState Hook: counter and toggle.
 import { useState } from 'react';
 
 function Counter() {
@@ -11,7 +11,7 @@ function Counter() {
       <button onClick={() => setCount((c) => c + 1)}>Increment</button>
       <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
       <button onClick={() => setCount(0)}>Reset</button>
-
+      
       <p>The toggle is {isOn ? 'ON' : 'OFF'}</p>
       <button onClick={() => setIsOn((on) => !on)}>Toggle</button>
     </section>

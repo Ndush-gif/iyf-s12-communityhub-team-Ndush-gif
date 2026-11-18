@@ -1,6 +1,5 @@
 import Card from '../shared/Card';
 
-// Hardcoded for Week 8 — becomes real data once the backend exists.
 const popularPosts = [
   'Getting Started with React',
   'JavaScript Best Practices',

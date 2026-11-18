@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-// Task 15.1 — intro component. Replace the placeholder text with your own.
+// Task 15.1 — intro component. 
 function Intro() {
-  const name = 'Your Name';
+  const name = 'Catherine Nduku';
   // Lazy initial state: read the clock once, on first render.
   const [now] = useState(() => new Date());
   const hour = now.getHours();
@@ -18,7 +18,6 @@ function Intro() {
       <p>{greeting}! Thanks for stopping by.</p>
       <p>I'm a Season 12 student at the IYF Weekend Academy, learning full-stack web development.</p>
       <p>Before React I worked through HTML, CSS and JavaScript, and I enjoy building things people can use.</p>
-      <p>This term my team is building CommunityHub, a place for developers to share their work.</p>
       <p>Today is {now.toDateString()}.</p>
     </section>
   );

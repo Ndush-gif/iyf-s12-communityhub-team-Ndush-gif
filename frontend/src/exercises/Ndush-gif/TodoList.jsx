@@ -1,4 +1,4 @@
-// Task 16.3 — state with arrays: add, toggle and delete without mutating.
+// Task 16.3 state with arrays: add, toggle and delete without mutating.
 import { useState } from 'react';
 
 function TodoList() {
