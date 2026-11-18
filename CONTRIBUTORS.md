@@ -4,7 +4,7 @@
 
 | Name                 | GitHub                                                   | Role     | Contributions                                                                                                    |
 |----------------------|----------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------|
-| Catherine Nduku      | [@Ndush-gif](https://github.com/Ndush-gif) --------------|Team Lead | Repo setup, Vite scaffold, layout (Header, Footer, Sidebar), posts feature (PostList, CreatePost), utils + tests |
+| Catherine Nduku      | [@Ndush-gif](https://github.com/Ndush-gif)               |Team Lead | Repo setup, Vite scaffold, layout (Header, Footer, Sidebar), posts feature (PostList, CreatePost), utils + tests |
 | Ann Catherine Waweru | [@anncathy-commits](https://github.com/anncathy-commits) | Developer| Profiles (UserCard, UserProfile); Comments and Auth (later weeks)                                                |
 
 ## Weekly Log — one section per member, each member edits only their own
