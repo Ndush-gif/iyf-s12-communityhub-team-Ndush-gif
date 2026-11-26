@@ -23,5 +23,4 @@ function Intro() {
     </section>
   );
 }
-
 export default Intro;
