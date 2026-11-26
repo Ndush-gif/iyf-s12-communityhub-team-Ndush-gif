@@ -1,0 +1,22 @@
+// Task 17.1 Ex. 2, Pattern 3 — localStorage sync.
+import { useState, useEffect } from 'react';
+
+function ThemeToggle() {
+  // Lazy initial state: read localStorage once, on the first render.
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;
+  }, [theme]);
+
+  return (
+    <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      Toggle Theme ({theme})
+    </button>
+  );
+}
+
+export default ThemeToggle;
